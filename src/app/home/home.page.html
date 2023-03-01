@@ -1,20 +1,17 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Mobile Development App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <ion-button expand="block" class="ion-margin" (click)="getPicture()">Take or Get Photo</ion-button>
+  <img [src]="selectedImage?.webPath"/>
+  <ion-button *ngIf="selectedImage" (click)="share()" expand="block" class="ion-margin">Share via Social Media</ion-button>
+  <div class="container">
+    <p>Lat: {{lat}}, Lng: {{lng}}</p>
+    <ion-button (click)="whereIam()">Locate me!</ion-button>
   </div>
 </ion-content>

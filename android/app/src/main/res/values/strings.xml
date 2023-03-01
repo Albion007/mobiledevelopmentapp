@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">mobiledevelopmentapp</string>
+    <string name="title_activity_main">mobiledevelopmentapp</string>
+    <string name="package_name">com.amorii7.cameraShareApp</string>
+    <string name="custom_url_scheme">com.amorii7.cameraShareApp</string>
+</resources>
